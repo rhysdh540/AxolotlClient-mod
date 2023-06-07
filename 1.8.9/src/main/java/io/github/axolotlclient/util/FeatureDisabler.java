@@ -59,10 +59,10 @@ public class FeatureDisabler {
 	private static String currentAddress = "";
 
 	public static void init() {
-		setServers(AxolotlClient.CONFIG.lowFire, NONE, "gommehd");
-		setServers(AxolotlClient.CONFIG.timeChangerEnabled, NONE, "gommehd");
-		setServers(Freelook.getInstance().enabled, () -> Freelook.getInstance().needsDisabling(), "hypixel", "mineplex", "gommehd", "nucleoid");
-		setServers(((ToggleSprintHud) HudManager.getInstance().get(ToggleSprintHud.ID)).toggleSneak, NONE, "hypixel");
+		setServers(AxolotlClient.CONFIG.lowFire, NONE, "kasldfgasdfasdf");
+		setServers(AxolotlClient.CONFIG.timeChangerEnabled, NONE, "kasldfgasdfasdf");
+		setServers(Freelook.getInstance().enabled, () -> Freelook.getInstance().needsDisabling(), "kasldfgasdfasdf");
+		setServers(((ToggleSprintHud) HudManager.getInstance().get(ToggleSprintHud.ID)).toggleSneak, NONE, "kasldfgasdfasdf");
 
 		ClientPlayConnectionEvents.INIT.register((handler0, client0) ->
 			ClientPlayNetworking.registerGlobalReceiver(channelName.toString(), (client, handler, buf, responseSender) -> {
